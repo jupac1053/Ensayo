@@ -1,5 +1,5 @@
 // script.js
-const adafruitIoUrl = 'https://io.adafruit.com/api/v2/';
+const adafruitIoUrl = 'https://io.adafruit.com/api/v2/Jupac1053/feeds/led1';
 const adafruitApiKey = 'aio_zvQA66eRQlTvYQODxGHtfDcosIAJ';
 const feedIds = ['led1', 'led2', 'led3', 'led4'];
 
