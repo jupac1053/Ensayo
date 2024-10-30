@@ -1,6 +1,6 @@
 const adafruitIoUrl = 'https://io.adafruit.com/api/v2/';
 const adafruitIoUsername = 'Jupac1053';
-const adafruitIoKey = 'aio_uXrh27CbHGY9yQh84XiQjBMdzQiO';
+const adafruitIoKey = 'aio_ATil44Ae3NQpmFAmkdpOhODsCsRq';
 const feedIds = ['led1', 'led2', 'led3', 'led4'];
 
 // Obten los elementos checkbox
