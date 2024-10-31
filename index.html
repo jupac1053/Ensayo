@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Control de LEDs</title>
-    <style>
-        /* Estilos para los checkboxes */
-        .checkbox {
-            display: inline-block;
-            margin: 10px;
-        }
-    </style>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
 </head>
 <body>
-    <h1>Control de LEDs</h1>
-    <div class="checkbox">
-        <input type="checkbox" id="led1" />
-        <label for="led1">LED 1</label>
-    </div>
-    <div class="checkbox">
-        <input type="checkbox" id="led2" />
-        <label for="led2">LED 2</label>
-    </div>
-    <div class="checkbox">
-        <input type="checkbox" id="led3" />
-        <label for="led3">LED 3</label>
-    </div>
-    <div class="checkbox">
-        <input type="checkbox" id="led4" />
-        <label for="led4">LED 4</label>
-    </div>
+  <script>
+    // Configuración de Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyA-QOiNqn1UUEmAU5xdp5Ezdjc68iLsFQU",
+  authDomain: "iti-electricidad-ae0b5.firebaseapp.com",
+  databaseURL: "https://iti-electricidad-ae0b5-default-rtdb.firebaseio.com",
+  projectId: "iti-electricidad-ae0b5",
+  storageBucket: "iti-electricidad-ae0b5.appspot.com",
+  messagingSenderId: "248405714893",
+  appId: "1:248405714893:web:98609ab75ce3feb8a70684",
+  measurementId: "G-TBLGPR5066"
+};
+      
+    firebase.initializeApp(firebaseConfig);
 
-    <script src="script.js"></script>
+    // Autenticación
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        // Confirmación de datos
+        const db = firebase.database();
+        db.ref('datos').set({
+          nombre: 'Juan',
+          edad: 30,
+        });
+      } else {
+        console.log('No estás autenticado');
+      }
+    });
+  </script>
 </body>
 </html>
