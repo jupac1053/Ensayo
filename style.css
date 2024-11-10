@@ -1,0 +1,212 @@
+body{
+background-image:url(onepiece.jpg);
+background-position:center center;
+background-repeat:no repeat;
+background-size:cover;
+background-attachment:fixed ;}
+
+.inicio {
+    display:flex ;
+    border: solid #67677036;
+    Padding: 10px;
+    margin: auto;
+    Background-color:#706e2f36;
+}
+.colegio {
+    border:px solid rgb(70,69,69);
+    background: white;
+    color: white;
+    font-family:'courier-new', courier,monospace;
+     font-width:bold ;
+     text-align: center;
+     margin:5px;
+     background-color:#706e2f90;
+         
+}
+
+.marquee{
+    width: 300px ;
+    background: orange;
+    padding:10px;
+}
+
+
+.escudo{
+    float:left;
+    width: 150px;
+    height: 200px;
+    clip-path:circle(50% at 50% 50%);
+    
+}
+
+.flex-container{
+    display:flex;
+    border: solid black;
+    padding:30px;
+    margin: auto; 
+    flex-flow:row wrap; 
+    justify-content:space-between;
+    color:white;
+    background-color:#941ca656;
+      
+}
+
+.caja{
+    width:120px;
+    height: 120px; 
+    border:px solid rgb(70,69,69);
+    background: #100e08cc;
+    color: white;
+    font-family:'courier-new', courier,monospace;
+     font-width:bold ;
+     text-align: center;
+     margin:5px;
+}
+
+
+.lamp1{
+    width: 50px;
+    height: 50px;
+}
+.lamp2{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.caja1{
+    width:120px;
+    height: 120px; 
+    border:px solid rgb(70,69,69);
+    background:#3c2a7da3;
+    color: white;
+    font-family:'courier-new', courier,monospace;
+     font-width:bold ;
+     text-align: center;
+     margin:5px;
+}
+
+.caja3{
+    width:120px;
+    height: 120px; 
+    border:px solid rgb(70,69,69);
+    background:#9ba60e56;
+    color: white;
+    font-family:'courier-new', courier,monospace;
+     font-width:bold ;
+     text-align: center;
+     margin:5px;
+}
+
+.gato{width: 120px;
+height: 120px;}
+
+.parent{
+    margin:auto;
+    background-color:#ff5f55;
+    aling-conter: left;
+    display:flex;
+    flex-flow:row wrap;
+}
+
+.electrico{width: 150px;
+height: 200px;}
+
+.child{
+    width: 150px;
+    height: 75px;
+    background-color:#7b2bff;
+    margin:auto;
+    Aling-conter: left;
+    flex:left;
+}
+
+.li {
+background-color:#9bff6a;
+    
+}
+.card{
+    width: 150px;
+    height: 75px;
+    background-color:#ff352b;
+    margin:auto;
+}
+
+.contenedor-botones {
+  display: flex;
+  justify-content: space-between;
+    border: solid black;
+    padding:30px;
+    margin: auto; 
+    flex-flow:row wrap;
+}
+
+.boton-deslizante {
+  width: 200px;
+  margin: 20px;
+  border-radius: 100px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  border-radius: 100px;
+  
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 100px;
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "off";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 100px;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  content:'on';
+  color:black;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: space-between;
+  background: #b9ff2b;
+}
+
+.contenedor-imagenes img {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  
+}
