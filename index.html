@@ -1,38 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+  <title>Enviar datos a hoja de cálculo</title>
 </head>
 <body>
-  <script>
-    // Configuración de Firebase
-const firebaseConfig = {
-  apiKey: "AIzaSyA-QOiNqn1UUEmAU5xdp5Ezdjc68iLsFQU",
-  authDomain: "iti-electricidad-ae0b5.firebaseapp.com",
-  databaseURL: "https://iti-electricidad-ae0b5-default-rtdb.firebaseio.com/",
-  projectId: "iti-electricidad-ae0b5",
-  storageBucket: "iti-electricidad-ae0b5.appspot.com",
-  messagingSenderId: "248405714893",
-  appId: "1:248405714893:web:98609ab75ce3feb8a70684",
-
-};
-      
-    firebase.initializeApp(firebaseConfig);
-
-    // Autenticación
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        // Confirmación de datos
-        const db = firebase.database();
-        db.ref('datos').set({
-          nombre: 'Juan',
-          edad: 30,
-        });
-      } else {
-        console.log('No estás autenticado');
-      }
-    });
-  </script>
-  <h1>ensayin</h1>
+  <form action="[https://forms.gle/p9TJBc38jjyYPcXe7]" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido"><br><br>
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo"><br><br>
+    <input type="submit" value="Enviar">
+  </form>
 </body>
 </html>
